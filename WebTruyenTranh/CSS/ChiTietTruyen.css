@@ -1,0 +1,36 @@
+﻿body {
+}
+
+.manga-detail {
+    background-color: #101223;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.manga-tags span {
+    background-color: #4b54c3;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 3px;
+    display: inline-block;
+}
+
+.chapter-list table {
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+}
+
+.chapter-list th, .chapter-list td {
+    border: 1px solid #2e2e3f;
+    padding: 10px;
+}
+
+.info-line {
+    background-color: #101223;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: white;
+}

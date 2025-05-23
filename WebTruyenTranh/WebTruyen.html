@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CManga - Trang Chủ</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/CSS/Layout.css" />
+    <link rel="stylesheet" type="text/css" href="/CSS/ChiTietTruyen.css" />
+    <link rel="stylesheet" type="text/css" href="/CSS/BinhLuan.css" />
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        <h4>CMANGA</h4>
+        <a href="#" class="menu-item">Trang chủ</a>
+        <a href="#" class="menu-item">Truyện</a>
+        <a href="#" class="menu-item">Mới cập nhật</a>
+        <a href="#" class="menu-item">Truyện hot</a>
+        <a href="#" class="menu-item">Bảng xếp hạng</a>
+    </div>
+
+
+    <div class="header-background"></div>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <i class="fas fa-bars menu-icon" id="menu-toggle"></i>
+            <div class="logo">CMANGA</div>
+        </div>
+
+        <div class="top-bar-right">
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="login-icon" id="login-icon">
+                <i class="fas fa-user"></i>
+            </div>
+
+            <div class="user-menu" id="user-menu">
+                <a href="#"><i class="fas fa-star"></i> Danh vọng</a>
+                <a href="#"><i class="fas fa-bell"></i> Thông báo</a>
+                <a href="#"><i class="fas fa-user"></i> Trang cá nhân</a>
+                <a href="#"><i class="fas fa-bookmark"></i> Theo dõi</a>
+                <a href="#"><i class="fas fa-history"></i> Đã đọc</a>
+                <a href="#"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="manga-detail">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="Images/LaoToMaDao.jpeg" class="img-fluid rounded" alt="Bìa truyện">
+                </div>
+                <div class="col-md-9">
+                    <h3>Hoá Ra Ta Là Lão Tổ Ma Đạo?</h3>
+
+                    <div class="manga-tags">
+                        <span>Manhua</span><span>Tu Tiên</span><span>Huyền Huyễn</span><span>Tu Tiên</span>
+                    </div>
+                    <div class="info-line"><strong>Nhóm dịch:</strong> Pheromone</div>
+                    <div class="info-line"><strong>Tình trạng:</strong> Đang tiến hành</div>
+                    <div class="info-line"><strong>Cập nhật:</strong> 2 phút trước</div>
+                    <div class="info-line"><strong>Lượt xem:</strong> 0</div>
+                    <div class="info-line"><strong>Theo dõi:</strong> 1</div>
+                    <div class="mt-3">
+                        <button class="btn btn-primary">Đọc từ đầu</button>
+                        <button class="btn btn-outline-light">Theo dõi</button>
+                        <button class="btn btn-outline-danger">Báo lỗi</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h5><i class="fas fa-info-circle"></i> Giới thiệu</h5>
+            <p>Hoá Ra Ta Là Lão Tổ Ma Đạo? được cập nhật nhanh nhất và đầy đủ nhất tại Cmanga . Bạn đọc đừng quên để lại bình luận và chia sẻ, ủng hộ Cmanga ra các chương mới nhất của truyện Hoá Ra Ta Là Lão Tổ Ma Đạo? nhé.</p>
+            <hr>
+            <h5><i class="fas fa-list"></i> Danh sách chương</h5>
+            <div class="chapter-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Chapter</th>
+                            <th>Cập Nhật</th>
+                            <th>Lượt Xem</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Chapter 24: Season 2</td>
+                            <td>Vài Giây Trước</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Chapter 1</td>
+                            <td>1 Phút Trước</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <h5 class="mt-5"><i class="fas fa-comments"></i> 0 Bình luận</h5>
+        <div class="comment-box mt-3">
+            <textarea class="comment-input" placeholder="Nhập bình luận..."></textarea>
+            <div class="comment-actions">
+                <button class="send-button"><i class="fas fa-paper-plane"></i></button>
+                <button class="emoji-button"><i class="fas fa-smile"></i></button>
+            </div>
+        </div>
+        <div class="comment-sort text-end mt-2 text-light">
+            <small><b>Nổi bật</b> <i class="fas fa-chevron-down"></i></small>
+        </div>
+    </div>
+
+    <script>// Mở/đóng sidebar
+        document.getElementById("menu-toggle").onclick = function () {
+            document.getElementById("sidebar").classList.toggle("active");
+        };
+
+        // Hiện/ẩn menu người dùng
+        document.getElementById("login-icon").onclick = function () {
+            const menu = document.getElementById("user-menu");
+            menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+        };
+
+        // Ẩn menu nếu click ra ngoài
+        document.addEventListener("click", function (event) {
+            const loginIcon = document.getElementById("login-icon");
+            const userMenu = document.getElementById("user-menu");
+            if (!loginIcon.contains(event.target) && !userMenu.contains(event.target)) {
+                userMenu.style.display = "none";
+            }
+        });</script>
+</body>
+</html>
